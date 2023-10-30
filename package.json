@@ -9,7 +9,7 @@
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean stylelint parcel:build",
-    "stylelint": "stylelint src/**/*.scss",
+    "stylelint": "stylelint src/**/*.scss --quiet-deprecation-warnings" ,
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "web": "dist/index.html",
