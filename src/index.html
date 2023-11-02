@@ -1,26 +1,132 @@
 <!DOCTYPE html>
 
-<html>
+<html LANG="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
     <title>UOC Boilerplate</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <main>
+    <include src="./views/header.html"></include>
+
+    <section id="inicio">
+      <p>Sin duda, la provincia de Cádiz ofrece una experiencia única para los amantes del senderismo. Aquí, te invitamos a
+        adentrarte en un mundo de belleza natural, donde cada paso te acerca a la majestuosidad de la geografía gaditana. Las
+        emocionantes rutas de senderismo que te aguardan en esta región son una ventana a paisajes impresionantes que cambian
+        con cada curva del camino.</p>
+      
+      <p>Desde las montañas hasta los bosques, Cádiz te brinda la oportunidad de explorar una diversidad de ecosistemas que
+        albergan una riqueza inigualable de flora y fauna. Ya sea que busques la paz y tranquilidad de un paseo a través de
+        los frondosos bosques, o la emoción de conquistar cimas escarpadas, Cádiz tiene algo para todos los aventureros.</p>
+      
+      <p>Cada ruta de senderismo en Cádiz es una aventura que despierta tus sentidos y te conecta con la naturaleza en su
+        estado
+        más puro. Sumérgete en el esplendor de esta provincia andaluza y descubre la magia de sus senderos mientras creas
+        recuerdos inolvidables en medio de la naturaleza. En Cádiz, la aventura aguarda a aquellos que buscan explorar y
+        experimentar la belleza natural en su forma más auténtica.</p> <br>
+    </section>
+
+<!--     <section id="galeria">
+      <div class="portada">
+        <img id="portada1" src="./assets/images/vista.jpg" alt="Rutas de la provincia de Cádiz">
+        <img id="portada2" src="./assets/images/vista2.jpg" alt="Rutas de la provincia de Cádiz">
+        <img id="portada3" src="./assets/images/vista3.jpg" alt="Rutas de la provincia de Cádiz">
+      </div>
+      <button id="prev">Anterior</button>
+      <button id="next">Siguiente</button>
+    </section> -->
+    
+    <section id="rutas">
+      <h2>Rutas de Senderismo</h2>
+        <div class="cont">
+          <section class="block">
+            <div class="block__title">
+              <h1 class="block block__title-red">01 <i class="fa-solid fa-person-hiking" style="color: #800000;"></i></h1>
+              <p class="block block__title-name">Sendero del Río Majaceite</p>
+            </div>
+            <figure>
+              <img src="./assets/images/majaceite.jpg" alt="Imagen del Majaceite">
+            </figure>
+            <div class="block__detail">
+              <p>Esta es una de las rutas más conocidas de la provincia de Cádiz por unir dos de los pueblos más bonitos de la Sierra de
+              Cádiz: El Bosque y Benamahoma.</p>
+              <p>El sendero es lineal, tiene poco más de 4 kilómetros muy sencillos y se recorre en unas 2 horas. Gracias a su trazado
+              por la vera del río Majaceite, el paseo está lleno de vegetación y agua, por lo que es fresco e ideal para hacerlo con
+              niños en cualquier época del año.</p>
+            </div>
+          </section>
+
+          <section class="block">
+            <div class="block__title">
+              <h1 class="block block__title-red">02 <i class="fa-solid fa-person-biking" style="color: #800000;"/></h1>
+              <p class="block block__title-name">Vía Verde de la Sierra</p>
+            </div>
+            <figure>
+              <img src="./assets/images/verde.jpg" alt="Imagen de la Vía Verde de la Sierra">
+            </figure>
+            <div class="block__detail">
+              <p>Una vez más, nos encontramos con una antigua vía de ferrocarril abandonada que se ha recuperado, especialmente
+                para recorrer en bicicleta por sus 36 kilómetros en total. Obviamente, el recorrido puede adaptarse y reducirse según
+                se quiera.</p>
+              <p>Esta vía verde une los pueblos gaditanos de Olvera y Puerto Serrano y tiene más de 30 túneles. De hecho, en Olvera
+                pueden alquilarse las bicicletas para no ir cargado con ellas, aunque también se puede hacer algún tramo a pie.
+              </p>
+            </div>
+          </section>
+        
+          <section class="block">
+            <div class="block__title">
+              <h1 class="block block__title-red">03 <i class="fa-solid fa-person-hiking" style="color: #800000;"></i></h1>
+              <p class="block block__title-name">Sendero Punta del Boquerón</p>
+            </div>
+            <figure>
+              <img src="./assets/images/boqueron.jpg" alt="Imagen de la Punta del Boquerón Cádiz">
+            </figure>
+            <div class="block__detail">
+              <p>La costa de Cádiz también tiene bonitas y peculiares rutas de senderismo. Una de las más reconocidas es esta que une dos
+              bonitos municipios, San Fernando y Chiclana.</p>
+              <p>En sus 2.6 kilómetros, este sendero lineal y sencillo permite conocer el entorno natural más salvaje de las marismas. De
+              hecho, el punto de inicio desde San Fernando es la misma playa de Camposoto.</p>
+            </div>
+          </section>
+             
+          <section class="block">
+            <div class="block__title">
+              <h1 class="block block__title-red">04 <i class="fa-solid fa-person-hiking" style="color: #800000;"></i></h1>
+              <p class="block block__title-name">Sendero Río de la Miel</p>
+            </div>
+            <figure>
+              <img src="./assets/images/miel.jpg" alt="Imagen del río de la miel">
+            </figure>
+            <div class="block__detail">
+              <p>En pleno Parque Natural Los Alcornocales de Algeciras existe un agradable paseo de 2.5 kilómetros por la ribera del río
+              que le da nombre. Aprovechando el agua, por el camino pueden verse antiguas acequias e, incluso, el molino de Escalona.</p>
+              <p>No entraña ninguna dificultad, pero no se permite el baño por seguridad. Además, se atraviesa un puente medieval que se
+              dice que dominaban antiguos bandoleros, por lo que es ideal para ir con niños y contarle su interesante historia
+              aventurera en plena naturaleza.</p>
+            </div>
+          </section>
+        
+          <section class="block">
+            <div class="block__title">
+              <h1 class="block block__title-red">05 <i class="fa-solid fa-person-hiking" style="color: #800000;"></i></h1>
+              <p class="block block__title-name">Calzada Romana de Benaocaz a Ubrique</p>
+            </div>
+            <figure>
+              <img src="./assets/images/romana.jpg" alt="Imagen de la Calzada Romana de Benaocaz a Ubrique">
+            </figure>
+            <div class="block__detail">
+              <p>Este antiquísimo sendero de piedra atraviesa un parque natural, por lo que combina cultura y naturaleza. La ruta, de
+              poco más de 3 kilómetros, es lineal y se recorre en una hora porque no entraña ninguna dificultad.</p>
+              <p>En Benaocaz, comienza en la A-2302 junto a la parada del autobús del pueblo. En Ubrique, se empieza la ruta en el
+              convento o ermita de San Juan.</p>
+            </div>
+          </section>
+    </section>
+    </main>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>

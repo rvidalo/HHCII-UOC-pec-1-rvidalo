@@ -2,56 +2,185 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: sans-serif;
+  letter-spacing: 0.6px;
+  line-height: 1em;
+}
+
 body {
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  margin: 15px 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  line-height: 2rem;
+}
+
+h2 {
+  margin: 25px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  line-height: 2rem;
+}
+
+/* Cabecera */
+header {
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 3rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: left;
+  overflow: hidden;
+}
+
+header div {
+  display: block;
+  text-align: center;
+}
+
+.logo {
+  background-image: url('../images/logo_Zahara.png');
+  background-repeat: no-repeat;
+  background-size: 250px;
+  width: 400px;
+  height: 160px;
+  display: inline-block;
+}
+
+main {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 3rem;
+}
+
+#prev,
+#next {
+  margin-top: 20px;
+}
+
+.footer-text-small p {
+  font-size: 0.55rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Detalles */
+.cont {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  width: 100%;
+}
+
+.cont>section {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.cont figure {
   margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  width: 100%;
 }
 
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.uoc-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
+.cont figure img {
+  width: 100%;
   height: auto;
-
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
-  }
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
-
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
-  }
+.block__title-red {
+  color: #841c24;
+  text-align: left;
+  margin: 0;
 }
 
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
+.block__title {
+  width: 100%;
+}
+
+.block__title p {
+  font-weight: 600;
+}
+
+.block__detail {
+  width: 100%;
+}
+
+.block__detail>p{
+  margin-top: 0;
+}
+
+/* Pié de página */
+footer {
+  padding: 2rem 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
   text-align: center;
+}
+
+/* TABLET */
+@media screen and (min-width: 700px) {
+
+  html {
+    letter-spacing: 0.7px;
+    line-height: 1.3rem;
+  }
+
+  h1 {
+    margin: 30px 0;
+    font-size: 2.5em;
+  }
+
+  main {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  figure {
+    margin: 20px 0;
+  }
+
+  .cont>section {
+    flex-direction: row;
+  }
+
+  .block__title,
+  .cont>section>figure {
+    width: 25%;
+  }
+
+  .block__detail {
+    width: 50%;
+    margin-left: 1rem;
+  }
+
+}
+
+/* PC */
+@media screen and (min-width: 992px) {
+
+  header div {
+    float: left;
+  }
+
+  header {
+    margin: 1rem auto;
+    max-width: 80%;
+  }
+
+  main {
+    width: 80%;
+  }
+
 }
