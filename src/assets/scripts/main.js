@@ -51,8 +51,3 @@ nextBtn.addEventListener("click", () => {
   }
   mostrarImagen(posicionActual);
 });
-
-+(function () {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
-})();
